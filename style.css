@@ -276,30 +276,30 @@
   }
   
   20% {
-        background:url("/images/ashish.jpg");
+        background:url("./images/ashish.jpg");
         background-position:70% 0%;
         background-size: cover;
   }
   
   40% {
-        background:url("/images/ashish2.jpg");
+        background:url("./images/ashish2.jpg");
         background-position:60% 0%;
         background-size: cover;
   }
     60% {
-      background:url("/images/ashish.jpg");
+      background:url("./images/ashish.jpg");
   
         background-position:60% 0%;
         background-size: cover;
   }
     80% {
-      background:url("/images/ashish6.png");
+      background:url("./images/ashish6.png");
   
         background-position:70% 0%;
         background-size: cover;
   }
     100% {
-      background:url("/images/ashish8.png");
+      background:url("./images/ashish8.png");
   
         background-position:80% 0%;
         background-size: cover;
