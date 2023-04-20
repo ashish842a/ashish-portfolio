@@ -1,0 +1,293 @@
+:root {
+    --darkgreen: #3C6255;
+    --lightgreen: #e0eae3a2;
+    --green: #A7F0BA;
+    --leafgreen:#149b14;
+    --dryleaf:#D9EAB3;
+    --sage:#d7e9c1;
+    --yellow:#EAE7B1;
+    --white:#f2f2f2;
+    --black:#151515;
+    --font-size:16px;
+    --sfont-size:14px;
+    --lfont-size:18px;
+    --heading-size:30px;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Gilroy";
+    font-weight: 400;
+    
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* nav */
+nav{
+    /* position: relative; */
+    width: 100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+  }
+  #nav-responsive{
+    display: none;
+  }
+  .show{
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #38ef7d; */
+  }
+  #home nav #logo{
+    font-size: var(--heading-size);
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    text-transform: initial;
+    /* font-size: 20px; */
+  }
+  #links{
+    margin-left: 20px !important;
+    gap: 2vw;
+    display: flex;
+    font-size: 12px;
+  
+  }
+  #links a{     
+    cursor: pointer;
+    color: var(--black);
+  }
+  #links a::after{
+   content: "";
+   display: block;
+   width: 0%;
+   height: 1px;
+   background-color: var(--orange);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  #links a:hover::after{
+    width: 100%;
+  }
+  nav #nav-btns{
+    display: flex;
+    align-items: center;
+    /* gap: 2vw; */
+    font-size: var(--lfont-size);
+    
+  }
+  nav #nav-btns i{
+    font-weight:500;
+    height: 37px;
+    width: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* background-color: var(--white); */
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    font-size: 16px;
+  }
+
+.banner {
+    padding: 6em 0 8em 0;
+    text-align: center;
+  width: 100%;
+  /* background-image: url(http://illusion.scene360.com/wp-content/uploads/2015/01/wes-anderson-12.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5); */
+  /* box-shadow: inset 0 0 0 2000px rgba(174, 163, 163, 0.5); */
+  background-color: #fff;
+  margin-top: -60px;
+  /* background-color: red; */
+}
+
+.border {
+    width: 60%;
+    margin: 0 auto;
+    height: 47px;
+    /* border: 2px solid #fff; */
+    border: 2px solid #151515;
+  border-bottom: 0;
+}
+.banner h2 {
+    margin: 0;
+    font-size: 3em;
+    /* color: #FFFFFF; */
+    color: #151515;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0.5em 0 0 0;
+}
+
+.banner p {
+    /* color: #FFFFFF; */
+    color: #151515;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+    padding: 0 0 2em 0;
+}
+
+.border-bottom {
+    border-top: 0;
+    /* border-bottom: 2px solid #fff !important; */
+    border-bottom: 2px solid #151515 !important;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--lightgreen); */
+}
+#tractor{
+    width: 100%;
+    padding:0vw 6vw;
+    /* background-color: red; */
+    margin-top: -70px;
+   
+}
+h2{
+    font-weight: 600;
+    text-align: center;
+    margin: 0 30px;
+    
+}
+.cards{
+    width: 100%;
+   
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+   
+    /* background-color: yellow; */
+}
+.cards .card{
+    background-color: var(--white);
+    position: relative;
+    width:246px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    overflow: hidden;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  
+}
+.cards .card .image{
+    position: relative;
+    width: 100%;
+    height:40%;
+    background-color: var(--lightgreen);
+    object-fit: cover;
+}
+.cards .card img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 150%;
+    object-fit: cover;
+}
+.cards .card .desc{
+    position: relative;
+    width: 100%;
+    height:50%;
+    padding-top:20px;
+    /* background-color: #50c550; */
+}
+.cards .card .desc h4{
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+.cards .card .desc p{
+    font-size: var(--sfont-size);
+}
+
+.cards .card .desc h3{
+    font-weight: 700;
+    margin: 8px;
+    /* color:  #50c550; */
+}
+.cards .card a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    /* background-color: #50c550; */
+    padding:15px 10px;
+    color: var(--white);
+    font-size: var(--sfont-size);
+    font-weight: 600;
+}
+.yellow{
+    background-color: rgb(238, 213, 23);
+}
+.c-yellow{
+    color:  rgb(238, 213, 23);
+    /* color: purple; */
+}
+.pink{
+    background-color: rgb(250, 127, 148);
+}
+.c-pink{
+    /* color: rgb(250, 127, 148); */
+    color: rgba(255, 68, 0, 0.743);
+}
+.green{
+    background-color:  #50c550;
+}
+.c-green{
+    color:  #50c550;
+}
+.blue{
+    background-color:  #64c3db;
+}
+.c-blue{
+    color:  #64c3db;
+}
+
+
+@media only screen and (max-width: 600px){
+
+  .banner h2{
+    font-size: 2.2em;
+  }
+}
